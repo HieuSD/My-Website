@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     font-size: 1.25em;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 300;
     line-height: 1.5;
     letter-spacing: 2px;
@@ -45,8 +45,7 @@ ul{
 h1,
 h2,
 h3{
-  font-family: 'Caramel', cursive;
-  font-weight: 400;
+  font-weight: bold;
   color: #385ed1;
 }
 h1{
@@ -255,119 +254,166 @@ header, footer{
 /* footer */
 /* fonts */
 @font-face {
-    font-family: 'Caramel';
-    src: url('./fonts/Caramel-Regular.eot');
-    src: url('./fonts/Caramel-Regular.eot?#iefix') format('embedded-opentype'),
-        url('./fonts/Caramel-Regular.woff2') format('woff2'),
-        url('./fonts/Caramel-Regular.woff') format('woff'),
-        url('./fonts/Caramel-Regular.ttf') format('truetype'),
-        url('./fonts/Caramel-Regular.svg#Caramel-Regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-Black.woff2') format('woff2'),
+      url('../fonts/Poppins-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Ubuntu';
-    src: url('./fonts/Ubuntu-Bold.eot');
-    src: url('./fonts/Ubuntu-Bold.eot?#iefix') format('embedded-opentype'),
-        url('./fonts/Ubuntu-Bold.woff2') format('woff2'),
-        url('./fonts/Ubuntu-Bold.woff') format('woff'),
-        url('./fonts/Ubuntu-Bold.ttf') format('truetype'),
-        url('./fonts/Ubuntu-Bold.svg#Ubuntu-Bold') format('svg');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-Bold.woff2') format('woff2'),
+      url('../fonts/Poppins-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Ubuntu';
-    src: url('./fonts/Ubuntu-BoldItalic.eot');
-    src: url('./fonts/Ubuntu-BoldItalic.eot?#iefix') format('embedded-opentype'),
-        url('./fonts/Ubuntu-BoldItalic.woff2') format('woff2'),
-        url('./fonts/Ubuntu-BoldItalic.woff') format('woff'),
-        url('./fonts/Ubuntu-BoldItalic.ttf') format('truetype'),
-        url('./fonts/Ubuntu-BoldItalic.svg#Ubuntu-BoldItalic') format('svg');
-    font-weight: bold;
-    font-style: italic;
-    font-display: swap;
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-BlackItalic.woff2') format('woff2'),
+      url('../fonts/Poppins-BlackItalic.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Ubuntu';
-    src: url('./fonts/Ubuntu-Italic.eot');
-    src: url('./fonts/Ubuntu-Italic.eot?#iefix') format('embedded-opentype'),
-        url('./fonts/Ubuntu-Italic.woff2') format('woff2'),
-        url('./fonts/Ubuntu-Italic.woff') format('woff'),
-        url('./fonts/Ubuntu-Italic.ttf') format('truetype'),
-        url('./fonts/Ubuntu-Italic.svg#Ubuntu-Italic') format('svg');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-BoldItalic.woff2') format('woff2'),
+      url('../fonts/Poppins-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Ubuntu';
-    src: url('./fonts/Ubuntu-Light.eot');
-    src: url('./fonts/Ubuntu-Light.eot?#iefix') format('embedded-opentype'),
-        url('./fonts/Ubuntu-Light.woff2') format('woff2'),
-        url('./fonts/Ubuntu-Light.woff') format('woff'),
-        url('./fonts/Ubuntu-Light.ttf') format('truetype'),
-        url('./fonts/Ubuntu-Light.svg#Ubuntu-Light') format('svg');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-ExtraBoldItalic.woff2') format('woff2'),
+      url('../fonts/Poppins-ExtraBoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Ubuntu';
-    src: url('./fonts/Ubuntu-LightItalic.eot');
-    src: url('./fonts/Ubuntu-LightItalic.eot?#iefix') format('embedded-opentype'),
-        url('./fonts/Ubuntu-LightItalic.woff2') format('woff2'),
-        url('./fonts/Ubuntu-LightItalic.woff') format('woff'),
-        url('./fonts/Ubuntu-LightItalic.ttf') format('truetype'),
-        url('./fonts/Ubuntu-LightItalic.svg#Ubuntu-LightItalic') format('svg');
-    font-weight: 300;
-    font-style: italic;
-    font-display: swap;
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-ExtraBold.woff2') format('woff2'),
+      url('../fonts/Poppins-ExtraBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Ubuntu';
-    src: url('./fonts/Ubuntu-Medium.eot');
-    src: url('./fonts/Ubuntu-Medium.eot?#iefix') format('embedded-opentype'),
-        url('./fonts/Ubuntu-Medium.woff2') format('woff2'),
-        url('./fonts/Ubuntu-Medium.woff') format('woff'),
-        url('./fonts/Ubuntu-Medium.ttf') format('truetype'),
-        url('./fonts/Ubuntu-Medium.svg#Ubuntu-Medium') format('svg');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-ExtraLight.woff2') format('woff2'),
+      url('../fonts/Poppins-ExtraLight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Ubuntu';
-    src: url('./fonts/Ubuntu-Regular.eot');
-    src: url('./fonts/Ubuntu-Regular.eot?#iefix') format('embedded-opentype'),
-        url('./fonts/Ubuntu-Regular.woff2') format('woff2'),
-        url('./fonts/Ubuntu-Regular.woff') format('woff'),
-        url('./fonts/Ubuntu-Regular.ttf') format('truetype'),
-        url('./fonts/Ubuntu-Regular.svg#Ubuntu-Regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-Italic.woff2') format('woff2'),
+      url('../fonts/Poppins-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Ubuntu';
-    src: url('./fonts/Ubuntu-MediumItalic.eot');
-    src: url('./fonts/Ubuntu-MediumItalic.eot?#iefix') format('embedded-opentype'),
-        url('./fonts/Ubuntu-MediumItalic.woff2') format('woff2'),
-        url('./fonts/Ubuntu-MediumItalic.woff') format('woff'),
-        url('./fonts/Ubuntu-MediumItalic.ttf') format('truetype'),
-        url('./fonts/Ubuntu-MediumItalic.svg#Ubuntu-MediumItalic') format('svg');
-    font-weight: 500;
-    font-style: italic;
-    font-display: swap;
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-ExtraLightItalic.woff2') format('woff2'),
+      url('../fonts/Poppins-ExtraLightItalic.woff') format('woff');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
 }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-Light.woff2') format('woff2'),
+      url('../fonts/Poppins-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-LightItalic.woff2') format('woff2'),
+      url('../fonts/Poppins-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-Medium.woff2') format('woff2'),
+      url('../fonts/Poppins-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-Regular.woff2') format('woff2'),
+      url('../fonts/Poppins-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-MediumItalic.woff2') format('woff2'),
+      url('../fonts/Poppins-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-Thin.woff2') format('woff2'),
+      url('../fonts/Poppins-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-SemiBoldItalic.woff2') format('woff2'),
+      url('../fonts/Poppins-SemiBoldItalic.woff') format('woff');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-SemiBold.woff2') format('woff2'),
+      url('../fonts/Poppins-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-ThinItalic.woff2') format('woff2'),
+      url('../fonts/Poppins-ThinItalic.woff') format('woff');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+
 
