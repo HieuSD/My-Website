@@ -1,29 +1,35 @@
-body{
-    margin: 0;
-    padding: 0;
-    font-size: 1.25em;
+html{
+    font-size: 1.125em;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     line-height: 1.5;
     letter-spacing: 2px;
 }
+body{
+    margin: 0;
+    padding: 0;
+}
 a{
     text-decoration: none;
-    color: #38a3d1;
+    color: #45b29a;
     transition: 1s;
 }
 a:hover{
-  color: #31355B;
+  color: #21564b;
 }
 ul{
   margin: 0;
   list-style: none;
 }
-.site-logo img{
-    height: 70px;
-    width: 70px;
+.site-logo{
+    height: 72px;
+    width: 72px;
     object-fit: cover;
     border-radius: 50%;
+}
+.header-title img{
+  width: 150px;
+  height: 45px;
 }
 .hero-img img{
   width: 100%;
@@ -35,6 +41,7 @@ ul{
   object-fit: cover;
   margin: 0 auto;
   border-radius: 50%;
+  margin-bottom: 2rem;
 }
 .what-img img{
   width: 100%;
@@ -45,26 +52,37 @@ ul{
 h1,
 h2,
 h3{
-  font-weight: bold;
-  color: #385ed1;
+  color: #45b29a;
+  margin: 0;
 }
 h1{
     font-size: 5em;
     margin: 1.5rem 0;
+    font-family: 'Dancing Script', cursive;
 }
 h2{
   font-size: 2.6em;
-  margin: 0 0 1.5rem 0;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
   text-align: center;
 }
 h3{
-  font-size: 1.5em;
-  margin: 0 0 1.5rem 0;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+p{
+  font-weight: 300;
+  margin: 0;
+  margin-bottom: 1.5rem;
 }
 .header-title p{
   font-size: 1.5em;
   margin: 2rem 0;
-  color: #3887d1;
+  color: #45b29a;
+  font-weight: 400;
+}
+.coppy-right p{
+  margin: 0;
 }
 small{
   font-size: .8em;
@@ -72,9 +90,14 @@ small{
 }
 /* layout */
 header, footer{
-    background: linear-gradient(to bottom, #90dffe 0%,#38a3d1 100%);
-    padding-top: 1.5rem;
+    background: #E0EBE8;
     text-align: center;
+}
+header{
+  padding-top: 1.5rem;
+}
+footer{
+  padding: 2rem 0;
 }
 .container{
     max-width: 980px;
@@ -104,8 +127,8 @@ header, footer{
     }
 }
 /* nav */
-.site-logo img{
-    margin: 0;
+.site-logo{
+    margin: auto;
 }
 .nav-list{
   display: flex;
@@ -114,18 +137,25 @@ header, footer{
   justify-content: center;
   flex-direction: column;
 }
+.nav-item{
+  line-height: 72px;
+}
 .nav-link{
     font-size: 1em;
-    color: #3887d1;
+    color: #45b29a;
+    font-weight: 400;
     transition: 1s color;
 }
 .nav-link:hover,
 .nav-link:focus,
 .active{
-    color: #385ed1;
-    border-bottom: 2px solid #385ed1;
+    color: #21564b;
+    border-bottom: 2px solid #21564b;
 }
 @media (min-width:675px){
+    .site-logo{
+    margin-left: 0;
+    }
     .nav-list{
         flex-direction: row;
     }
@@ -136,38 +166,31 @@ header, footer{
 /* header title */
 .header-title{
   position: relative;
-  height: 400px;
-}
-.header-title-heading{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  height: 300px;
+  padding: 56px 0;
 }
 .header-title-right{
   position: absolute;
-  top: 0;
+  top: 50px;
   right: 0;
-  height: 100px;
 }
 .header-title-left{
   position: absolute;
-  bottom: 0;
+  bottom: 50px;
   left: 0;
-  height: 100px;
 }
-@media (max-width:675px){
+/* @media (max-width:675px){
   .header-title-left,
   .header-title-right{
     display: none;
   }
-}
+} */
 /* about */
 #about{
   max-width: 460px;
   text-align: center;
-  padding: 2rem 0;
-  margin: 2rem auto;
+  padding: 84px 0;
+  margin: 0 auto;
 }
 #about p{
   text-align: justify;
@@ -175,8 +198,11 @@ header, footer{
 }
 /* what */ 
 #what{
-  padding: 2rem 0;
-  margin: 2rem auto;
+  padding: 84px 0;
+  margin: 0 auto;
+}
+#what section{
+  margin-bottom: 84px;
 }
 .what-img{
   width: 40%;
@@ -196,6 +222,7 @@ header, footer{
   }
   .what-img{
     width: 100%;
+    margin-bottom: 2rem;
   }
   .what-body{
     width: 100%;
@@ -210,8 +237,8 @@ header, footer{
 }
 /* help */
 #help{
-  padding: 2rem 0;
-  margin: 2rem auto;
+  padding: 84px 0;
+  margin: 0 auto;
   max-width: 700px;
   text-align: center;
 }
@@ -220,17 +247,18 @@ header, footer{
   text-align-last: center;
 }
 .btn-mailto a{
+  font-size: 1rem;
+  font-weight: 400;
   display: inline-block;
   text-transform: uppercase;
-  color: #31355B;
-  background-color: #3887d1;
-  padding: 1rem;
+  color: #1b7f69;
+  background-color: #45b29a;
+  padding: .8rem;
   transition: 1s;
   border-radius: 5%;
 }
 .btn-mailto a:hover{
-  background-color: #31355B;
-  color: #fff;
+  background-color: #3ea08a;
   box-shadow: rgb(0 0 0 / 60%) 0px 0px 1rem;
 }
 /* about-article */
@@ -252,6 +280,7 @@ header, footer{
   color: #fff;
 }
 /* footer */
+
 /* fonts */
 @font-face {
   font-family: 'Poppins';
