@@ -204,6 +204,9 @@ footer{
 #what section{
   margin-bottom: 84px;
 }
+#what section:last-child{
+  margin-bottom: 0;
+}
 .what-img{
   width: 40%;
 }
@@ -280,7 +283,12 @@ footer{
   color: #fff;
 }
 /* footer */
-
+.footer-icon{
+  margin-bottom: 2rem;
+}
+.footer-icon i{
+  margin: 0 1rem;
+}
 /* fonts */
 @font-face {
   font-family: 'Poppins';
